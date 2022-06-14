@@ -13,6 +13,19 @@
   <div id="globeViz"></div>
 
   <script>
+var jetzt = new Date();
+var stunde = jetzt.getHours=();
+if (stunde >= 6 && stunde <= 18) {
+document.bgColor = "#ffffff";
+document.fgColor = "#000000";
+document.write("Hier dein text oder html codes her für den tag");
+}
+else {
+document.bgColor = "#000000";
+document.fgColor = "#ffffff";
+document.write("Hier dein text oder html codes her für die nacht");
+
+
     // Gen random data
     const N = 20;
 
