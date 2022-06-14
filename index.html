@@ -19,14 +19,16 @@ if (stunde >= 6 && stunde <= 18) {
 // day
 document.bgColor = "#ffffff";
 document.fgColor = "#000000";
+bild = "day";
 }
 else {
 // night
 document.bgColor = "#000000";
 document.fgColor = "#ffffff";
+bild = "night";
 }
-   </script>
-   <script>
+   //</script>
+   //<script>
     // Gen random data
     const N = 20;
 
@@ -39,7 +41,7 @@ document.fgColor = "#ffffff";
     }));
 
     const Globe = new ThreeGlobe()
-      .globeImageUrl('assets/img/earth-day.jpg')
+      .globeImageUrl('assets/img/earth-' + bild + '.jpg')
       .arcsData(arcsData)
       .arcColor('color')
       .arcDashLength(0.4)
