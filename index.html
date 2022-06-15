@@ -3,7 +3,7 @@
 <title>pfeiffer.world</title>
   <style> body { margin: 0; } </style>
   <link rel="stylesheet" href="style.css">
-  <meta http-equiv="refresh" content="45; URL=https://www.pfeiffer.world/">
+  <meta http-equiv="refresh" content="945; URL=https://www.pfeiffer.world/">
   <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="pragma" content="no-cache" />
   <meta http-equiv="expires" content="0" />
@@ -18,13 +18,12 @@
   <div id="globeViz"></div>
   <script>
 
-// var jetzt = new Date();
+var jetzt = new Date().getHours()
 // var Std = jetzt.getHours();
 
-if (new Date().getHours() < 20) {
+if (jetzt >= 5 && jetzt <= 20) {
 bild = 'day';
-}
-if (new Date().getHours() < 6) {
+} else {
 bild = 'night';
 }
 // ueberschreiben zum testen bei bedarf:
