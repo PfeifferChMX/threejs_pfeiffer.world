@@ -1,8 +1,8 @@
 <html>
 <head>
 <title>pfeiffer.world</title>
-  <link rel="stylesheet" href="./style.css">
-<meta http-equiv="refresh" content="45; URL=https://www.pfeiffer.world/">
+  <style> body { margin: 0; } </style>
+
   <script src="assets/threejs/three.js"></script>
 <script src='https://gh.SpaceGlobe.pfeiffer.space/assets/tjs/OrbitControls.js'></script>
   <script src="assets/threejs/TrackballControls.js"></script>
@@ -72,9 +72,8 @@ loader.load('assets/img/bg-' + bild + '.png', function(texture) {scene.backgroun
       .arcDashInitialGap(() => Math.random() * 5)
       .arcDashAnimateTime(1000);
 
-// Erde umkreisen
-var orbitRadius = 165.0; 
-var date;
+
+var orbitRadius = 165.0; // for example var date;
 date = Date.now() * 0.0001;
 //date = 946681201 * 0.0001;
 Moon.position.set( Math.cos(date) * orbitRadius, 0, Math.sin(date) * orbitRadius );
@@ -97,13 +96,13 @@ Moon.position.set( Math.cos(date) * orbitRadius, 0, Math.sin(date) * orbitRadius
     const camera = new THREE.PerspectiveCamera();
     camera.aspect = window.innerWidth/window.innerHeight;
     camera.updateProjectionMatrix();
-    camera.position.z = 700;
+    camera.position.z = 600;
 
     // Add camera controls
     const tbControls = new THREE.TrackballControls(camera, renderer.domElement);
     tbControls.minDistance = 101;
-    tbControls.rotateSpeed = 1.0;
-    tbControls.zoomSpeed = 1.2;
+    tbControls.rotateSpeed = 5;
+    tbControls.zoomSpeed = 0.8;
 
 
     // Kick-off renderer
@@ -111,10 +110,10 @@ Moon.position.set( Math.cos(date) * orbitRadius, 0, Math.sin(date) * orbitRadius
       // Frame cycle
       tbControls.update();
 
-      Moon.rotation.y -= 0.002;
-      Moon.receiveShadow = true;
-      Moon.rotateSpeed = 2.0;  // geht nicht, muss ueber die CameraControls laufen
-      
+Moon.rotation.y -= 0.002;
+Moon.receiveShadow = true;
+
+
       Globe.rotation.y += 0.002;
 
       renderer.render(scene, camera);
@@ -122,8 +121,4 @@ Moon.position.set( Math.cos(date) * orbitRadius, 0, Math.sin(date) * orbitRadius
     })();
 
   </script>
-<h1>Hallo World</h1>
-<h2>ungültige Subdomain</h2>
-Pfeiffer.world wurde ohne - oder mit ungültiger - Subdomain aufgerufen. <br/>
-Sie werden in Kürze auf die Startseite www.pfeiffer.space weitergeleitet.
 </body>
