@@ -2,9 +2,10 @@
 <head>
 <title>pfeiffer.world</title>
   <style> body { margin: 0; } </style>
-
+  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="refresh" content="45; URL=https://www.pfeiffer.world/">
   <script src="assets/threejs/three.js"></script>
-<script src='https://gh.SpaceGlobe.pfeiffer.space/assets/tjs/OrbitControls.js'></script>
+  <script src='https://gh.SpaceGlobe.pfeiffer.space/assets/tjs/OrbitControls.js'></script>
   <script src="assets/threejs/TrackballControls.js"></script>
   <script src="assets/threejs/three-globe.js"></script>
   <script src="assets/threejs/three-globe.js"></script>
@@ -12,9 +13,7 @@
 
 <body>
   <div id="globeViz"></div>
-
   <script>
-
 
 // var jetzt = new Date();
 // var Std = jetzt.getHours();
@@ -26,8 +25,8 @@ if (new Date().getHours() < 6) {
 bild = 'night';
 }
 // ueberschreiben zum testen bei bedarf:
-bild = 'day';
-//bild = 'night';
+//bild = 'day';
+bild = 'night';
 
 
 const DEG_TO_RAD = Math.PI / 180;
@@ -72,8 +71,9 @@ loader.load('assets/img/bg-' + bild + '.png', function(texture) {scene.backgroun
       .arcDashInitialGap(() => Math.random() * 5)
       .arcDashAnimateTime(1000);
 
-
-var orbitRadius = 165.0; // for example var date;
+// Erde umkreisen
+var orbitRadius = 165.0; 
+var date;
 date = Date.now() * 0.0001;
 //date = 946681201 * 0.0001;
 Moon.position.set( Math.cos(date) * orbitRadius, 0, Math.sin(date) * orbitRadius );
@@ -96,13 +96,13 @@ Moon.position.set( Math.cos(date) * orbitRadius, 0, Math.sin(date) * orbitRadius
     const camera = new THREE.PerspectiveCamera();
     camera.aspect = window.innerWidth/window.innerHeight;
     camera.updateProjectionMatrix();
-    camera.position.z = 600;
+    camera.position.z = 700;
 
     // Add camera controls
     const tbControls = new THREE.TrackballControls(camera, renderer.domElement);
     tbControls.minDistance = 101;
-    tbControls.rotateSpeed = 5;
-    tbControls.zoomSpeed = 0.8;
+    tbControls.rotateSpeed = 1.0;
+    tbControls.zoomSpeed = 1.2;
 
 
     // Kick-off renderer
@@ -110,15 +110,20 @@ Moon.position.set( Math.cos(date) * orbitRadius, 0, Math.sin(date) * orbitRadius
       // Frame cycle
       tbControls.update();
 
-Moon.rotation.y -= 0.002;
-Moon.receiveShadow = true;
-
-
+      Moon.rotation.y -= 0.002;
+      Moon.receiveShadow = true;
+      Moon.rotateSpeed = 16.0;  // geht nicht, muss ueber die CameraControls laufen
+      
       Globe.rotation.y += 0.002;
 
       renderer.render(scene, camera);
       requestAnimationFrame(animate);
     })();
 
-  </script>
+  </script><noscript>
+<h1>Hallo World</h1>
+<h2>ung&uuml;ltige Subdomain</h2>
+Pfeiffer.world wurde ohne - oder mit ung&uuml;ltiger - Subdomain aufgerufen. <br/>
+Sie werden in K&uuml;rze auf die Startseite www.pfeiffer.space weitergeleitet.
+</noscript>
 </body>
