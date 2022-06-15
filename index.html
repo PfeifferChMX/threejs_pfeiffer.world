@@ -60,8 +60,8 @@ loader.load('assets/img/bg-' + bild + '.png', function(texture) {scene.backgroun
  const Moon = new ThreeGlobe()
        Moon.globeImageUrl('assets/img/moon-' + bild + '.jpg')
       Moon.scale.set( 0.2, 0.2, 0.2 );
-      Moon.position.x = 125.0;
-      Moon.position.z = 125.0;
+      //Moon.position.x = 125.0;
+      //Moon.position.z = 125.0;
 
  const Globe = new ThreeGlobe()
       .globeImageUrl('assets/img/earth-' + bild + '.jpg')
@@ -71,6 +71,12 @@ loader.load('assets/img/bg-' + bild + '.png', function(texture) {scene.backgroun
       .arcDashGap(4)
       .arcDashInitialGap(() => Math.random() * 5)
       .arcDashAnimateTime(1000);
+
+
+var orbitRadius = 165.0; // for example var date;
+date = Date.now() * 0.0001;
+//date = 946681201 * 0.0001;
+Moon.position.set( Math.cos(date) * orbitRadius, 0, Math.sin(date) * orbitRadius );
 
 
     // Setup renderer
@@ -103,9 +109,12 @@ loader.load('assets/img/bg-' + bild + '.png', function(texture) {scene.backgroun
     (function animate() { // IIFE
       // Frame cycle
       tbControls.update();
+
 Moon.rotation.y -= 0.002;
 Moon.receiveShadow = true;
-Globe.rotation.y += 0.002;
+
+
+      Globe.rotation.y += 0.002;
 
       renderer.render(scene, camera);
       requestAnimationFrame(animate);
