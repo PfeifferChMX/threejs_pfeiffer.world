@@ -4,7 +4,9 @@
   <style> body { margin: 0; } </style>
 
   <script src="assets/threejs/three.js"></script>
+<script src='https://gh.SpaceGlobe.pfeiffer.space/assets/tjs/OrbitControls.js'></script>
   <script src="assets/threejs/TrackballControls.js"></script>
+  <script src="assets/threejs/three-globe.js"></script>
   <script src="assets/threejs/three-globe.js"></script>
 </head>
 
@@ -13,7 +15,7 @@
 
   <script>
 
-bild = 'night';
+
 // var jetzt = new Date();
 // var Std = jetzt.getHours();
 
@@ -23,9 +25,22 @@ bild = 'day';
 if (new Date().getHours() < 6) {
 bild = 'night';
 }
+// ueberschreiben zum testen bei bedarf:
+//bild = 'day';
+//bild = 'night';
 
-    // Gen random data
-    const N = 20;
+
+const DEG_TO_RAD = Math.PI / 180;
+// Gen random data
+const N = 20;
+
+const params = { 
+color: '#000000',
+transparent: true, 
+opacity: 0.1,
+alpha: true };
+
+//OrbitControl controls = new THREE.OrbitControls(camera, renderer.domElement); controls.autoRotate = true; controls.autoRotateSpeed = 2; controls.maxDistance = 350; controls.minDistance = 150; controls.enablePan = false;
 
     const arcsData = [...Array(N).keys()].map(() => ({
       startLat: (Math.random() - 0.5) * 180,
@@ -35,7 +50,20 @@ bild = 'night';
       color: ['red', 'white', 'blue', 'green'][Math.round(Math.random() * 3)]
     }));
 
-    const Globe = new ThreeGlobe()
+
+// background image 
+const loader = new THREE.TextureLoader(); 
+//loader.background = new THREE.Color( params.color );
+loader.load('assets/img/bg-' + bild + '.png', function(texture) {scene.background = texture;} );
+
+
+ const Moon = new ThreeGlobe()
+       Moon.globeImageUrl('assets/img/moon-' + bild + '.jpg')
+      Moon.scale.set( 0.2, 0.2, 0.2 );
+      Moon.position.x = 125.0;
+      Moon.position.z = 125.0;
+
+ const Globe = new ThreeGlobe()
       .globeImageUrl('assets/img/earth-' + bild + '.jpg')
       .arcsData(arcsData)
       .arcColor('color')
@@ -43,6 +71,7 @@ bild = 'night';
       .arcDashGap(4)
       .arcDashInitialGap(() => Math.random() * 5)
       .arcDashAnimateTime(1000);
+
 
     // Setup renderer
     const renderer = new THREE.WebGLRenderer();
@@ -54,12 +83,14 @@ bild = 'night';
     scene.add(Globe);
     scene.add(new THREE.AmbientLight(0xbbbbbb));
     scene.add(new THREE.DirectionalLight(0xffffff, 0.6));
+    scene.add(Moon);
+
 
     // Setup camera
     const camera = new THREE.PerspectiveCamera();
     camera.aspect = window.innerWidth/window.innerHeight;
     camera.updateProjectionMatrix();
-    camera.position.z = 500;
+    camera.position.z = 600;
 
     // Add camera controls
     const tbControls = new THREE.TrackballControls(camera, renderer.domElement);
@@ -67,12 +98,18 @@ bild = 'night';
     tbControls.rotateSpeed = 5;
     tbControls.zoomSpeed = 0.8;
 
+
     // Kick-off renderer
     (function animate() { // IIFE
       // Frame cycle
       tbControls.update();
+Moon.rotation.y -= 0.002;
+Moon.receiveShadow = true;
+Globe.rotation.y += 0.002;
+
       renderer.render(scene, camera);
       requestAnimationFrame(animate);
     })();
+
   </script>
 </body>
