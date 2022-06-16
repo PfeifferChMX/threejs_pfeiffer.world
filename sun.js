@@ -5,15 +5,15 @@ var trabant3 = '';
 var P1 = 'sun';
 var P2 = 'earth';
 /* 
-var P1 = 'sun';
-var P2 = 'mercury';
-var P3 = 'venus';
-var P4 = 'earth';
-var P5 = 'mars';
-var P6 = 'jupiter';
-var P7 = 'saturn';
-var P8 = 'uranus';
-var P9 = 'neptune';
+var sol1 = 'sun';
+var P1 = 'mercury';
+var P2 = 'venus';
+var P3 = 'earth';
+var P4 = 'mars';
+var P5 = 'jupiter';
+var P6 = 'saturn';
+var P7 = 'uranus';
+var P8 = 'neptune';
 */
 
 if (jetzt >= 5 && jetzt <= 20) {
