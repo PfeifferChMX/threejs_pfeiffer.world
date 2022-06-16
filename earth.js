@@ -1,6 +1,20 @@
 var jetzt = new Date().getHours();
+var trabant1 = 'moon';
+var trabant2 = '';
+var trabant3 = '';
 var P1 = 'earth';
-var P2 = 'moon';
+var P2 = trabant1;
+/* 
+var P1 = 'sun';
+var P2 = 'mercury';
+var P3 = 'venus';
+var P4 = 'earth';
+var P5 = 'mars';
+var P6 = 'jupiter';
+var P7 = 'saturn';
+var P8 = 'uranus';
+var P9 = 'neptune';
+*/
 
 if (jetzt >= 5 && jetzt <= 20) {
 bild = 'day';
