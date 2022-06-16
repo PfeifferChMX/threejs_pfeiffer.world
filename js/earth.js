@@ -14,7 +14,7 @@ alpha: true };
     const arcsData = [...Array(N).keys()].map(() => ({
 
 
-     if (artificialsatellitesani === true) {};
+     if (artificialsatellitesani == true) {};
     /*  startLat: (Math.random() - 0.5) * 180,
       startLng: (Math.random() - 0.5) * 360,
       endLat: (Math.random() - 0.5) * 180,
