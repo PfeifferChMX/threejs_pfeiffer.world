@@ -11,15 +11,16 @@ var P2 = 'earth';
 var trabant1 = 'moon';
 var trabant2 = '';
 var trabant3 = '';
-var sol1 = 'sun';
-var P1 = 'mercury';
-var P2 = 'venus';
-var P3 = 'earth';
-var P4 = 'mars';
-var P5 = 'jupiter';
-var P6 = 'saturn';
-var P7 = 'uranus';
-var P8 = 'neptune';
+var P1 = 'sun';
+var P2 = 'mercury';
+var P3 = 'venus_atmosphere'; 
+// venus_surface or venus_atmosphere
+var P4 = 'earth';
+var P5 = 'mars';
+var P6 = 'jupiter';
+var P7 = 'saturn';
+var P8 = 'uranus';
+var P9 = 'neptune';
 } else if (p2r === "test") {
 var trabant1 = 'moon';
 var P1 = 'earth';
@@ -31,12 +32,9 @@ var P2 = 'earth';
 }
 
 // originale planetenfolge
-// trabant1 = 'moon';
-// sol1 = 'sun';  
-// P1 = 'mercury';  // P2 = 'venus';  
-// P3 = 'earth';    // P4 = 'mars';   
-// P5 = 'jupiter';  // P6 = 'saturn'; 
-// P7 = 'uranus';   // P8 = 'neptune';
+// trabant1 = 'moon'
+// sun mercury 'venus_surface or venus_atmosphere' 
+// earth mars jupiter saturn uranus neptune
 
 // UMSCHALTEN TAG UND NACHT
 
