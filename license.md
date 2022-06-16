@@ -7,78 +7,15 @@
 > source: info
 
 
-## bg-day.png
-### license info
-> license text 
+## textures exempt moon-night
+### license CC 4.0
+> Distributed under Attribution 4.0 International license: You may use, adapt, and share these textures for any purpose, even commercially.
 
-> source: info
-
-
-## bg-night.png
-### license info
-> license text
-
-> source: info
+> source: Nasa via https://www.solarsystemscope.com/textures/
 
 
-## earth-day.jpg
-### license info
-> license text
+## texture moon-night.jpg
+### license CC 4.0
+> Distributed under Attribution 4.0 International license: You may use, adapt, and share these textures for any purpose, even commercially.
 
-> source: info
-
-
-## earth-night.jpg
-### license info
-> license text
-
-> source: info
-
-
-## moon-day.jpg
-### license info
-> license text
-
-> source: info
-
-
-## moon-night.jpg
-### license info
-> license text
-
-> source: info
-
-
-## over_bump.jpg
-### license info
-> license text
-
-> source: info
-
-
-## over_earthCloud.png
-### license info
-> license text
-
-> source: info
-
-
-## over_night.jpg
-### license info
-> license text
-
-> source: info
-
-
-## p2.png
-### license info
-> license text
-
-> source: info
-
-
-## p3.png
-### license info
-> license text
-
-> source: info
+> modified by PfeifferCh - source: Nasa via https://www.solarsystemscope.com/textures/
