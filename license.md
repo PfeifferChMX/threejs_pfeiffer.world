@@ -29,14 +29,6 @@ bg-day.png
 ### license info
 > license text
 
-## moon.jpg
-### license info
-> license text
-
-## night.jpg
-### license info
-> license text
-
 ## over_bump.jpg
 ### license info
 > license text
