@@ -39,10 +39,10 @@ alpha: true };
 //OrbitControl controls = new THREE.OrbitControls(camera, renderer.domElement); controls.autoRotate = true; controls.autoRotateSpeed = 2; controls.maxDistance = 350; controls.minDistance = 150; controls.enablePan = false;
 
     const arcsData = [...Array(N).keys()].map(() => ({
-      startLat: (20) * 360,
-      startLng: (20) * 360,
-      endLat: (20) * 360,
-      endLng: (20) * 360,
+      startLat: (50) * 360,
+      startLng: (50) * 360,
+      endLat: (60) * 360,
+      endLng: (60) * 360,
       color: ['red', 'white', 'blue', 'green'][Math.round(Math.random() * 3)]
     }));
 
