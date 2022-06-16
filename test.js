@@ -36,7 +36,7 @@ transparent: true,
 opacity: 0.1,
 alpha: true };
 
-//OrbitControl controls = new THREE.OrbitControls(camera, renderer.domElement); controls.autoRotate = true; controls.autoRotateSpeed = 2; controls.maxDistance = 350; controls.minDistance = 150; controls.enablePan = false;
+OrbitControl controls = new THREE.OrbitControls(camera, renderer.domElement); controls.autoRotate = true; controls.autoRotateSpeed = 2; controls.maxDistance = 350; controls.minDistance = 150; controls.enablePan = false;
 
     const arcsData = [...Array(N).keys()].map(() => ({
       startLat: (Math.random() - 0.5) * 180,
