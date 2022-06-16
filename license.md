@@ -5,7 +5,7 @@
 > license text
 
 
-bg-day.png
+## bg-day.png
 ### license info
 > license text
 
