@@ -1,4 +1,3 @@
-const p2r = "sun";
 // SONNE, PLANETEN UND MONDE KONFIGURATION 
 if (p2r === "earth") {
 var trabant1 = 'moon';
