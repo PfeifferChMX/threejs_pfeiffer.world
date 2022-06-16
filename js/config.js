@@ -1,5 +1,5 @@
+const p2r = "sun";
 // SONNE, PLANETEN UND MONDE KONFIGURATION 
-/*
 if (p2r === "earth") {
 var trabant1 = 'moon';
 var P1 = 'earth';
@@ -29,7 +29,7 @@ var trabant1 = 'moon';
 var P1 = 'sun';
 var P2 = 'earth';
 }
-*/
+
 // originale planetenfolge
 // trabant1 = 'moon';
 // sol1 = 'sun';  
