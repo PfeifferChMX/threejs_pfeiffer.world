@@ -1,4 +1,5 @@
 //var p2r = "sun";
+var artificialsatellitesani = "false";
 // SONNE, PLANETEN UND MONDE KONFIGURATION 
 if (p2r === "earth") {
 var trabant1 = 'moon';
