@@ -1,9 +1,9 @@
 var jetzt = new Date().getHours();
-var trabant1 = 'earth';
+var trabant1 = 'moon';
 var trabant2 = '';
 var trabant3 = '';
 var P1 = 'sun';
-var P2 = trabant1;
+var P2 = 'earth';
 /* 
 var P1 = 'sun';
 var P2 = 'mercury';
