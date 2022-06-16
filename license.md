@@ -7,14 +7,14 @@
 > source: info
 
 
-## textures exempt moon-night
+## textures exempt moon-day
 ### license CC 4.0
 > Distributed under Attribution 4.0 International license: You may use, adapt, and share these textures for any purpose, even commercially.
 
 > source: Nasa via https://www.solarsystemscope.com/textures/
 
 
-## texture moon-night.jpg
+## texture moon-day.jpg
 ### license CC 4.0
 > Distributed under Attribution 4.0 International license: You may use, adapt, and share these textures for any purpose, even commercially.
 
