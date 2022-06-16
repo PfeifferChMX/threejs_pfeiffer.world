@@ -12,12 +12,14 @@ alpha: true };
 //OrbitControl controls = new THREE.OrbitControls(camera, renderer.domElement); controls.autoRotate = true; controls.autoRotateSpeed = 2; controls.maxDistance = 350; controls.minDistance = 150; controls.enablePan = false;
 
     const arcsData = [...Array(N).keys()].map(() => ({
-     if (artificialsatellitesani === "true") {      startLat: (Math.random() - 0.5) * 180,
+     /*
+     if (artificialsatellitesani === "true") {
+      startLat: (Math.random() - 0.5) * 180,
       startLng: (Math.random() - 0.5) * 360,
       endLat: (Math.random() - 0.5) * 180,
       endLng: (Math.random() - 0.5) * 360,
       color: ['red', 'white', 'blue', 'green'][Math.round(Math.random() * 3)] 
-     };
+     }; */
     }));
 
 
