@@ -1,11 +1,11 @@
 //var p2r = "sun";
-const artificialsatellitesani = "false";
+const artificialsatellitesani = "inactive";
 // SONNE, PLANETEN UND MONDE KONFIGURATION 
 if (p2r === "earth") {
 var trabant1 = 'moon';
 var P1 = 'earth';
 var P2 = trabant1;
-const artificialsatellitesani = "false";
+const artificialsatellitesani = "active";
 } else if (p2r === "sun") {
 var P1 = 'sun';
 var P2 = 'earth';
