@@ -18,10 +18,10 @@ if (artificialsatellitesani == active) {
       endLat: (Math.random() - 0.5) * 180,
       endLng: (Math.random() - 0.5) * 360,
       color: ['red', 'white', 'blue', 'green'][Math.round(Math.random() * 3)] 
-    }))
+    }));
 } else {
    const arcsData = [...Array(N).keys()].map(() => ({
-    })) 
+    }));
 }
 
 
