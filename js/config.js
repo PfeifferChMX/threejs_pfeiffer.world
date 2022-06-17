@@ -27,6 +27,7 @@ var P9 = 'neptune';
 var trabant1 = 'moon';
 var P1 = 'earth';
 var P2 = trabant1;
+var artificialsatellitesani = "active";
 } else {
 var trabant1 = 'moon';
 var P1 = 'sun';
