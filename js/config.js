@@ -1,14 +1,15 @@
 //var p2r = "sun";
-var artificialsatellitesani = "inactive";
+var artisatani = "inactive";
 // SONNE, PLANETEN UND MONDE KONFIGURATION 
 if (p2r === "earth") {
 var trabant1 = 'moon';
 var P1 = 'earth';
 var P2 = trabant1;
-var artificialsatellitesani = "inactive";
+var artisatani = "active";
 } else if (p2r === "sun") {
 var P1 = 'sun';
 var P2 = 'earth';
+var artisatani = "inactive";
 } else if (p2r === "solarsystem") {
 var trabant1 = 'moon';
 var trabant2 = '';
@@ -23,11 +24,12 @@ var P6 = 'jupiter';
 var P7 = 'saturn';
 var P8 = 'uranus';
 var P9 = 'neptune';
+var artisatani = "inactive";
 } else if (p2r === "test") {
 var trabant1 = 'moon';
 var P1 = 'earth';
 var P2 = trabant1;
-var artificialsatellitesani = "active";
+var artisatani = "inactive";
 } else {
 var trabant1 = 'moon';
 var P1 = 'sun';
