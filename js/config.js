@@ -5,7 +5,7 @@ if (p2r === "earth") {
 var trabant1 = 'moon';
 var P1 = 'earth';
 var P2 = trabant1;
-const artificialsatellitesani = "true";
+const artificialsatellitesani = "false";
 } else if (p2r === "sun") {
 var P1 = 'sun';
 var P2 = 'earth';
