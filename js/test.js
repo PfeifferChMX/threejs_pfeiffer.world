@@ -11,7 +11,7 @@ alpha: true };
 
 //OrbitControl controls = new THREE.OrbitControls(camera, renderer.domElement); controls.autoRotate = true; controls.autoRotateSpeed = 2; controls.maxDistance = 350; controls.minDistance = 150; controls.enablePan = false;
 
-if (artificialsatellitesani == "active") {
+if (artificialsatellitesani === "active") {
  const arcsData = [...Array(N).keys()].map(() => ({
       startLat: (Math.random() - 0.5) * 180,
       startLng: (Math.random() - 0.5) * 360,
