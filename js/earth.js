@@ -24,12 +24,6 @@ const loader = new THREE.TextureLoader();
 loader.load('assets/img/bg-' + bild + '.jpg', function(texture) {scene.background = texture;} );
 
 
- const Moon = new ThreeGlobe()
-       Moon.globeImageUrl('assets/img/'+P2+'-' + bild + '.jpg')
-     .bumpImageUrl('assets/img/bump-'+P2+'.jpg')
-      Moon.scale.set( 0.2, 0.2, 0.2 );
-      //Moon.position.x = 125.0;
-      //Moon.position.z = 125.0;
 
  const Globe = new ThreeGlobe()
       .globeImageUrl('assets/img/'+P1+'-'+bild+'.jpg')
@@ -40,6 +34,13 @@ loader.load('assets/img/bg-' + bild + '.jpg', function(texture) {scene.backgroun
       .arcDashGap(4)
       .arcDashInitialGap(() => Math.random() * 5)
       .arcDashAnimateTime(1000);
+
+const Moon = new ThreeGlobe()
+       Moon.globeImageUrl('assets/img/'+P2+'-' + bild + '.jpg')
+     .bumpImageUrl('assets/img/bump-'+P2+'.jpg')
+      Moon.scale.set( 0.2, 0.2, 0.2 );
+      //Moon.position.x = 125.0;
+      //Moon.position.z = 125.0;
 
 // Erde umkreisen
 var orbitRadius = 165.0; 
