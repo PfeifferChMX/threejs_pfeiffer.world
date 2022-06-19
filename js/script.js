@@ -75,14 +75,14 @@ var date;
 date = Date.now() * 0.0001;
 
 
-Pl2.position.set( Math.cos(date) * orbitRadius + P2Abst, 0, Math.sin(date) * orbitRadius + P2Abst);
-Pl3.position.set( Math.cos(date) * orbitRadius + P3Abst, 0, Math.sin(date) * orbitRadius + P3Abst);
-Pl4.position.set( Math.cos(date) * orbitRadius + P4Abst, 0, Math.sin(date) * orbitRadius + P4Abst);
-Pl5.position.set( Math.cos(date) * orbitRadius + P5Abst, 0, Math.sin(date) * orbitRadius + P5Abst);
-Pl6.position.set( Math.cos(date) * orbitRadius + P6Abst, 0, Math.sin(date) * orbitRadius + P6Abst);
-Pl7.position.set( Math.cos(date) * orbitRadius + P7Abst, 0, Math.sin(date) * orbitRadius + P7Abst);
-Pl8.position.set( Math.cos(date) * orbitRadius + P8Abst, 0, Math.sin(date) * orbitRadius + P8Abst);
-Pl9.position.set( Math.cos(date) * orbitRadius + P9Abst, 0, Math.sin(date) * orbitRadius + P9Abst);
+Pl2.position.set( Math.cos(date) * orbitRadius + P2Abst, 0, Math.sin(date) * orbitRadius + 0);
+Pl3.position.set( Math.cos(date) * orbitRadius + P3Abst, 0, Math.sin(date) * orbitRadius + 0);
+Pl4.position.set( Math.cos(date) * orbitRadius + P4Abst, 0, Math.sin(date) * orbitRadius + 0);
+Pl5.position.set( Math.cos(date) * orbitRadius + P5Abst, 0, Math.sin(date) * orbitRadius + 0);
+Pl6.position.set( Math.cos(date) * orbitRadius + P6Abst, 0, Math.sin(date) * orbitRadius + 0);
+Pl7.position.set( Math.cos(date) * orbitRadius + P7Abst, 0, Math.sin(date) * orbitRadius + 0);
+Pl8.position.set( Math.cos(date) * orbitRadius + P8Abst, 0, Math.sin(date) * orbitRadius + 0);
+Pl9.position.set( Math.cos(date) * orbitRadius + P9Abst, 0, Math.sin(date) * orbitRadius + 0);
 
 
 
@@ -145,5 +145,4 @@ Pl9.position.set( Math.cos(date) * orbitRadius + P9Abst, 0, Math.sin(date) * orb
       renderer.render(scene, camera);
       requestAnimationFrame(animate);
     })();
-
 
