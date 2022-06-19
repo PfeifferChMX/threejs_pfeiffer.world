@@ -1,4 +1,5 @@
-# Based on three.js
+# Based on three.js 
+#          and globe.gl by vasturiano
 
 ## three.js 
 ### three.js is licensed under the MIT License
