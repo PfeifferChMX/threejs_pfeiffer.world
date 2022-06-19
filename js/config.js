@@ -5,11 +5,13 @@ if (p2r === "earth") {
 var trabant1 = 'moon';
 var P1 = 'earth';
 var P2 = trabant1;
+cameraposition = 700;
 var artisatani = "active";
 } else if (p2r === "sun") {
 var P1 = 'sun';
 var P2 = 'earth';
 var artisatani = "inactive";
+cameraposition = 700;
 } else if (p2r === "solarsystem") {
 var trabant1 = 'moon';
 var trabant2 = '';
@@ -25,15 +27,18 @@ var P7 = 'saturn';
 var P8 = 'uranus';
 var P9 = 'neptune';
 var artisatani = "inactive";
+cameraposition = 2000;
 } else if (p2r === "test") {
 var trabant1 = 'moon';
 var P1 = 'earth';
 var P2 = trabant1;
 var artisatani = "inactive";
+cameraposition = 700;
 } else {
 var trabant1 = 'moon';
 var P1 = 'sun';
 var P2 = 'earth';
+cameraposition = 700;
 }
 
 // originale planetenfolge
