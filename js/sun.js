@@ -25,13 +25,15 @@ loader.load('assets/img/bg-' + bild + '.jpg', function(texture) {scene.backgroun
 
 
  const Moon = new ThreeGlobe()
-       Moon.globeImageUrl('assets/img/' + P2 + '-' + bild + '.jpg')
+       Moon.globeImageUrl('assets/img/'+P2+'-' + bild + '.jpg')
+     .bumpImageUrl('assets/img/bump-'+P2+'.jpg')
       Moon.scale.set( 0.2, 0.2, 0.2 );
       //Moon.position.x = 125.0;
       //Moon.position.z = 125.0;
 
  const Globe = new ThreeGlobe()
-      .globeImageUrl('assets/img/' + P1 + '-' + bild + '.jpg')
+      .globeImageUrl('assets/img/'+P1+'-'+bild+'.jpg')
+      .bumpImageUrl('assets/img/bump-'+P1+'.jpg')
       .arcsData(arcsData)
       .arcColor('color')
       .arcDashLength(0.4)
