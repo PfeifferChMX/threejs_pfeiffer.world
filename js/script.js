@@ -39,35 +39,35 @@ const Pl1 = new ThreeGlobe()
  const Pl2 = new ThreeGlobe()
       Pl2.globeImageUrl('assets/img/' + P2 + '-' + bild + '.jpg')
       .bumpImageUrl('assets/img/bump-'+P2+'.jpg')
-      Pl2.scale.set( 0.2, 0.2, 0.2 );
+      Pl2.scale.set( P2DM, P2DM, P2DM );
  const Pl3 = new ThreeGlobe()
       Pl3.globeImageUrl('assets/img/' + P3 + '-' + bild + '.jpg')
       .bumpImageUrl('assets/img/bump-'+P3+'.jpg')
-      Pl3.scale.set( 0.2, 0.2, 0.2 );
+      Pl3.scale.set( P3DM, P3DM, P3DM );
  const Pl4 = new ThreeGlobe()
       Pl4.globeImageUrl('assets/img/' + P4 + '-' + bild + '.jpg')
       .bumpImageUrl('assets/img/bump-'+P4+'.jpg')
-      Pl4.scale.set( 0.2, 0.2, 0.2 );
+      Pl4.scale.set( P4DM, P4DM, P4DM );
  const Pl5 = new ThreeGlobe()
       Pl5.globeImageUrl('assets/img/' + P5 + '-' + bild + '.jpg')
       .bumpImageUrl('assets/img/bump-'+P5+'.jpg')
-      Pl5.scale.set( 0.2, 0.2, 0.2 );
+      Pl5.scale.set( P5DM, P5DM, P5DM );
  const Pl6 = new ThreeGlobe()
       Pl6.globeImageUrl('assets/img/' + P6 + '-' + bild + '.jpg')
       .bumpImageUrl('assets/img/bump-'+P6+'.jpg')
-      Pl6.scale.set( 0.2, 0.2, 0.2 );
+      Pl6.scale.set( P6DM, P6DM, P6DM );
  const Pl7 = new ThreeGlobe()
       Pl7.globeImageUrl('assets/img/' + P7 + '-' + bild + '.jpg')
       .bumpImageUrl('assets/img/bump-'+P7+'.jpg')
-      Pl7.scale.set( 0.2, 0.2, 0.2 );
+      Pl7.scale.set( P7DM, P7DM, P7DM );
  const Pl8 = new ThreeGlobe()
       Pl8.globeImageUrl('assets/img/' + P8 + '-' + bild + '.jpg')
       .bumpImageUrl('assets/img/bump-'+P8+'.jpg')
-      Pl8.scale.set( 0.2, 0.2, 0.2 );
+      Pl8.scale.set( P8DM, P8DM, P8DM );
  const Pl9 = new ThreeGlobe()
       Pl9.globeImageUrl('assets/img/' + P9 + '-' + bild + '.jpg')
       .bumpImageUrl('assets/img/bump-'+P9+'.jpg')
-      Pl9.scale.set( 0.2, 0.2, 0.2 );
+      Pl9.scale.set( P9DM, P9DM, P9DM );
 
 // P1 umkreisen
 var orbitRadius = 65.0; 
@@ -75,14 +75,14 @@ var date;
 date = Date.now() * 0.0001;
 
 
-Pl2.position.set( Math.cos(date) * orbitRadius + 200, 0, Math.sin(date) * orbitRadius + 200 );
-Pl3.position.set( Math.cos(date) * orbitRadius + 300, 0, Math.sin(date) * orbitRadius + 300 );
-Pl4.position.set( Math.cos(date) * orbitRadius + 400, 0, Math.sin(date) * orbitRadius + 400 );
-Pl5.position.set( Math.cos(date) * orbitRadius + 500, 0, Math.sin(date) * orbitRadius + 500);
-Pl6.position.set( Math.cos(date) * orbitRadius + 600, 0, Math.sin(date) * orbitRadius + 600);
-Pl7.position.set( Math.cos(date) * orbitRadius + 700, 0, Math.sin(date) * orbitRadius + 700);
-Pl8.position.set( Math.cos(date) * orbitRadius + 800, 0, Math.sin(date) * orbitRadius + 800);
-Pl9.position.set( Math.cos(date) * orbitRadius + 900, 0, Math.sin(date) * orbitRadius + 900);
+Pl2.position.set( Math.cos(date) * orbitRadius + P2Abst, 0, Math.sin(date) * orbitRadius + P2Abst );
+Pl3.position.set( Math.cos(date) * orbitRadius + P3Abst, 0, Math.sin(date) * orbitRadius + P3Abst);
+Pl4.position.set( Math.cos(date) * orbitRadius + P4Abst, 0, Math.sin(date) * orbitRadius + P4Abst);
+Pl5.position.set( Math.cos(date) * orbitRadius + P5Abst, 0, Math.sin(date) * orbitRadius + P5Abst);
+Pl6.position.set( Math.cos(date) * orbitRadius + P6Abst, 0, Math.sin(date) * orbitRadius + P6Abst);
+Pl7.position.set( Math.cos(date) * orbitRadius + P7Abst, 0, Math.sin(date) * orbitRadius + P7Abst);
+Pl8.position.set( Math.cos(date) * orbitRadius + P8Abst, 0, Math.sin(date) * orbitRadius + P8Abst);
+Pl9.position.set( Math.cos(date) * orbitRadius + P9Abst, 0, Math.sin(date) * orbitRadius + P9Abst);
 
 
 
@@ -145,6 +145,4 @@ Pl9.position.set( Math.cos(date) * orbitRadius + 900, 0, Math.sin(date) * orbitR
       renderer.render(scene, camera);
       requestAnimationFrame(animate);
     })();
-
-
 
