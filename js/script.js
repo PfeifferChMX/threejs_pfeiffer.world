@@ -33,41 +33,43 @@ const Pl1 = new ThreeGlobe()
       .arcColor('color')
       .arcDashLength(0.4)
       .arcDashGap(4)
-      .arcDashInitialGap(() => Math.random() * 5)
+      .arcDashInitialGap(() => Math.random() * 50)
       .arcDashAnimateTime(1000);
+
+
 
  const Pl2 = new ThreeGlobe()
       Pl2.globeImageUrl('assets/img/' + P2 + '-' + bild + '.jpg')
       .bumpImageUrl('assets/img/bump-'+P2+'.jpg')
-      Pl2.scale.set( P2DM, P2DM, P2DM );
+      Pl2.scale.set( P2DM*scalingfactor, P2DM*scalingfactor, P2DM*scalingfactor );
  const Pl3 = new ThreeGlobe()
       Pl3.globeImageUrl('assets/img/' + P3 + '-' + bild + '.jpg')
       .bumpImageUrl('assets/img/bump-'+P3+'.jpg')
-      Pl3.scale.set( P3DM, P3DM, P3DM );
+      Pl3.scale.set( P3DM*scalingfactor, P3DM*scalingfactor, P3DM*scalingfactor );
  const Pl4 = new ThreeGlobe()
       Pl4.globeImageUrl('assets/img/' + P4 + '-' + bild + '.jpg')
       .bumpImageUrl('assets/img/bump-'+P4+'.jpg')
-      Pl4.scale.set( P4DM, P4DM, P4DM );
+      Pl4.scale.set( P4DM*scalingfactor, P4DM*scalingfactor, P4DM*scalingfactor );
  const Pl5 = new ThreeGlobe()
       Pl5.globeImageUrl('assets/img/' + P5 + '-' + bild + '.jpg')
       .bumpImageUrl('assets/img/bump-'+P5+'.jpg')
-      Pl5.scale.set( P5DM, P5DM, P5DM );
+      Pl5.scale.set( P5DM*scalingfactor, P5DM*scalingfactor, P5DM*scalingfactor );
  const Pl6 = new ThreeGlobe()
       Pl6.globeImageUrl('assets/img/' + P6 + '-' + bild + '.jpg')
       .bumpImageUrl('assets/img/bump-'+P6+'.jpg')
-      Pl6.scale.set( P6DM, P6DM, P6DM );
+      Pl6.scale.set( P6DM*scalingfactor, P6DM*scalingfactor, P6DM*scalingfactor );
  const Pl7 = new ThreeGlobe()
       Pl7.globeImageUrl('assets/img/' + P7 + '-' + bild + '.jpg')
       .bumpImageUrl('assets/img/bump-'+P7+'.jpg')
-      Pl7.scale.set( P7DM, P7DM, P7DM );
+      Pl7.scale.set( P7DM*scalingfactor, P7DM*scalingfactor, P7DM*scalingfactor );
  const Pl8 = new ThreeGlobe()
       Pl8.globeImageUrl('assets/img/' + P8 + '-' + bild + '.jpg')
       .bumpImageUrl('assets/img/bump-'+P8+'.jpg')
-      Pl8.scale.set( P8DM, P8DM, P8DM );
+      Pl8.scale.set( P8DM*scalingfactor, P8DM*scalingfactor, P8DM*scalingfactor );
  const Pl9 = new ThreeGlobe()
       Pl9.globeImageUrl('assets/img/' + P9 + '-' + bild + '.jpg')
       .bumpImageUrl('assets/img/bump-'+P9+'.jpg')
-      Pl9.scale.set( P9DM, P9DM, P9DM );
+      Pl9.scale.set( P9DM*scalingfactor, P9DM*scalingfactor, P9DM*scalingfactor );
 
 // P1 umkreisen
 var orbitRadius = 65.0; 
@@ -141,8 +143,6 @@ Pl9.position.set( Math.cos(date) * orbitRadius + P9Abst, 0, Math.sin(date) * orb
       Pl9.rotation.y -= 0.002;
       Pl9.receiveShadow = true;
 
-
       renderer.render(scene, camera);
       requestAnimationFrame(animate);
     })();
-
