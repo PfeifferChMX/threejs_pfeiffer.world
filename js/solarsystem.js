@@ -28,6 +28,7 @@ loader.load('assets/img/bg-' + bild + '.jpg', function(texture) {scene.backgroun
 
  const Pl1 = new ThreeGlobe()
       .globeImageUrl('assets/img/' + P1 + '-' + bild + '.jpg')
+      .bumpImageUrl('assets/img/bump-'+P1+'.jpg')
       .arcsData(arcsData)
       .arcColor('color')
       .arcDashLength(0.4)
@@ -37,27 +38,35 @@ loader.load('assets/img/bg-' + bild + '.jpg', function(texture) {scene.backgroun
 
  const Pl2 = new ThreeGlobe()
       Pl2.globeImageUrl('assets/img/' + P2 + '-' + bild + '.jpg')
+      .bumpImageUrl('assets/img/bump-'+P2+'.jpg')
       Pl2.scale.set( 0.2, 0.2, 0.2 );
  const Pl3 = new ThreeGlobe()
       Pl3.globeImageUrl('assets/img/' + P3 + '-' + bild + '.jpg')
+      .bumpImageUrl('assets/img/bump-'+P3+'.jpg')
       Pl3.scale.set( 0.2, 0.2, 0.2 );
  const Pl4 = new ThreeGlobe()
       Pl4.globeImageUrl('assets/img/' + P4 + '-' + bild + '.jpg')
+      .bumpImageUrl('assets/img/bump-'+P4+'.jpg')
       Pl4.scale.set( 0.2, 0.2, 0.2 );
  const Pl5 = new ThreeGlobe()
       Pl5.globeImageUrl('assets/img/' + P5 + '-' + bild + '.jpg')
+      .bumpImageUrl('assets/img/bump-'+P5+'.jpg')
       Pl5.scale.set( 0.2, 0.2, 0.2 );
  const Pl6 = new ThreeGlobe()
       Pl6.globeImageUrl('assets/img/' + P6 + '-' + bild + '.jpg')
+      .bumpImageUrl('assets/img/bump-'+P6+'.jpg')
       Pl6.scale.set( 0.2, 0.2, 0.2 );
  const Pl7 = new ThreeGlobe()
       Pl7.globeImageUrl('assets/img/' + P7 + '-' + bild + '.jpg')
+      .bumpImageUrl('assets/img/bump-'+P7+'.jpg')
       Pl7.scale.set( 0.2, 0.2, 0.2 );
  const Pl8 = new ThreeGlobe()
       Pl8.globeImageUrl('assets/img/' + P8 + '-' + bild + '.jpg')
+      .bumpImageUrl('assets/img/bump-'+P8+'.jpg')
       Pl8.scale.set( 0.2, 0.2, 0.2 );
  const Pl9 = new ThreeGlobe()
       Pl9.globeImageUrl('assets/img/' + P9 + '-' + bild + '.jpg')
+      .bumpImageUrl('assets/img/bump-'+P9+'.jpg')
       Pl9.scale.set( 0.2, 0.2, 0.2 );
 
 // P1 umkreisen
@@ -136,6 +145,7 @@ Pl9.position.set( Math.cos(date) * orbitRadius + 900, 0, Math.sin(date) * orbitR
       renderer.render(scene, camera);
       requestAnimationFrame(animate);
     })();
+
 
 
 
