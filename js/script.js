@@ -110,7 +110,7 @@ Pl9.position.set( Math.cos(date) * orbitRadius + 900, 0, Math.sin(date) * orbitR
     const camera = new THREE.PerspectiveCamera();
     camera.aspect = window.innerWidth/window.innerHeight;
     camera.updateProjectionMatrix();
-    camera.position.z = 2000;
+    camera.position.z = cameraposition;
 
     // Add camera controls
     const tbControls = new THREE.TrackballControls(camera, renderer.domElement);
@@ -145,4 +145,6 @@ Pl9.position.set( Math.cos(date) * orbitRadius + 900, 0, Math.sin(date) * orbitR
       renderer.render(scene, camera);
       requestAnimationFrame(animate);
     })();
+
+
 
