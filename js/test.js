@@ -88,8 +88,8 @@ Pl9.position.set( Math.cos(date) * orbitRadius + P9Abst, 0, Math.sin(date) * orb
 
 
     // Auto-rotate
-    world.controls().autoRotate = true;
-    world.controls().autoRotateSpeed = 0.35;
+    //world.controls().autoRotate = true;
+    //world.controls().autoRotateSpeed = 0.35;
 
     // Add clouds sphere
     const CLOUDS_IMG_URL = './clouds.png'; // from https://github.com/turban/webgl-earth
