@@ -101,7 +101,7 @@ Pl9.position.set( Math.cos(date) * orbitRadius + P9Abst, 0, Math.sin(date) * orb
         new THREE.SphereBufferGeometry(Pl1.getGlobeRadius() * (1 + CLOUDS_ALT), 75, 75),
         new THREE.MeshPhongMaterial({ map: cloudsTexture, transparent: true })
       );
-      world.scene().add(clouds);
+      Pl1.scene().add(clouds);
 
       (function rotateClouds() {
         clouds.rotation.y += CLOUDS_ROTATION_SPEED * Math.PI / 180;
